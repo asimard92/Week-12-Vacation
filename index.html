@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD app</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="container">
+
+    <div class="title">
+        <h1>Virtual Packing Guide</h1>
+        <br>
+        <p>What I Need To Bring On Vacation!</p>
+    </div>
+
+    <div class="form">
+        <form action="javascript:void(0);" method="POST" onsubmit="app.Add()">
+            <input type="text" id="add-todo" placeholder="Item Name" class="form-control text-center">
+            <input type="submit" value="Add" class="btn btn-outline-info">
+        </form>
+        <br>
+        <br>
+        <p>How Many Items You Have: </p>
+        <p id="counter"></p>
+    </div>
+
+    <table class="table">
+        <thead class="to-do">
+            <tr>
+                <th class="text-center">What You Have On The List Thus Far:</th>
+            </tr>
+        </thead>
+        <tbody id="tasks">
+        </tbody>
+    </table>
+
+    <div id="edit-box" role="aria-hidden">
+        <form action="javascript:void(0);" method="POST" id="save-edit">
+            <input type="text" id="edit-todo">
+            <input type="submit" value="Save" class="btn btn-outline-info" /> <a onclick="CloseInput()"
+                aria-label="Close">&#10006;</a>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

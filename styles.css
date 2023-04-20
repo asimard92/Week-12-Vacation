@@ -1,0 +1,46 @@
+.title{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bolder;
+}
+
+/* h3{
+    text-align: center;
+} */
+
+.form{
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+input[type='submit'], button, [aria-label]{
+    cursor: pointer;
+}
+
+#edit-box{
+    display: none;
+    max-width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* table{
+    width: 100px;
+} */
+
+table th{
+    white-space: nowrap;
+    /* text-align: center;
+    align-items: center; */
+}
+
+td{
+    background-color: white;
+    /* text-align: left; */
+}
+
+.to-do{
+    background: transparent !important;
+}
