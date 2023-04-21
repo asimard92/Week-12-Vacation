@@ -12,8 +12,8 @@ let app = new function() {
       for (i = 0; i < this.tasks.length; i++) {
         data += '<tr>';
         data += '<td>'+(i+1)+". " + this.tasks[i] + '</td>';
-        data += '<td><button onclick="app.Edit(' + i + ')"  class="btn btn-outline-warning">Edit</button></td>';
-        data += '<td><button onclick="app.Delete(' + i + ')"  class="btn btn-outline-danger">Delete</button></td>';
+        data += '<td><button onclick="app.Edit(' + i + ')"  class="btn btn-warning">Edit</button></td>';
+        data += '<td><button onclick="app.Delete(' + i + ')"  class="btn btn-danger">Delete</button></td>';
         data += '</tr>';
       }
     }
@@ -47,7 +47,7 @@ let app = new function() {
 
     document.getElementById('save-edit').onsubmit = function() {
       // Get value
-      var task = el.value;
+      let task = el.value;
 
       if (task) {
         // Edit value

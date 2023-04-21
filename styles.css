@@ -1,24 +1,28 @@
-.title{
+.title {
     text-align: center;
     margin-top: 25px;
     font-weight: bolder;
 }
 
-/* h3{
-    text-align: center;
-} */
+body {
+    background-color: salmon;
+}
 
-.form{
+img{
+    align-items: center;
+}
+
+.form {
     margin: auto;
     max-width: 800px;
     text-align: center;
 }
 
-input[type='submit'], button, [aria-label]{
+input[type='submit'],button,[aria-label] {
     cursor: pointer;
 }
 
-#edit-box{
+#edit-box {
     display: none;
     max-width: 100px;
     margin: auto;
@@ -26,21 +30,19 @@ input[type='submit'], button, [aria-label]{
     text-align: center;
 }
 
-/* table{
-    width: 100px;
-} */
-
-table th{
-    white-space: nowrap;
-    /* text-align: center;
-    align-items: center; */
+table {
+    table-layout: fixe;
 }
 
-td{
+td {
     background-color: white;
-    /* text-align: left; */
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
 }
 
-.to-do{
-    background: transparent !important;
+.to-do {
+    font-size: x-large;
+    font-family: monospace;
 }
